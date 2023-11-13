@@ -1,10 +1,10 @@
 import { Test } from "./Test";
 import"./app.scss"
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar/Navbar";
 
 const App = () => {
   return <div>
-    {/* <section>
+    <section>
       <Navbar/>
       </section>
     <section>Parallax</section>
@@ -17,8 +17,8 @@ const App = () => {
 
 
 
- */}
-<Test/>
+
+
   </div>;
 };
 

@@ -5,6 +5,7 @@
     justify-items: center;
     background-color: white;
     color: black;
+   
 
     .bg{
         position: fixed;
@@ -13,7 +14,7 @@
         bottom: 0;
         width: 400px;
         background-color: white;
-
+        z-index: 999;
 
 
         .links{
@@ -42,6 +43,8 @@
         background-color: transparent;
         border: none;
         cursor: pointer;
+        z-index: 999;
+
 
 
     }

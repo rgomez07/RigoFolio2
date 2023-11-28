@@ -9,30 +9,24 @@ const items = [
     id:1,
     title: "Planr",
     img: "./public/travelItin.png",
-    desc: "Travel Itinerary App that allows you to search hotels, restaurants and attractions based off of desired location. You can also save itinerary and arrange by date.",
+    desc: "Travel Itinerary App that allows you to search hotels, restaurants and attractions based off of desired location. You can also save itinerary and arrange by date. Built using React and PostgreSQL while leveraging Google Places API, Google Maps API, and Travel Advisor API.",
 
   },
   {
     id:2,
-    title: "Planr",
-    img: "./public/travelItin.png",
-    desc: "Travel Itinerary App that allows you to search hotels, restaurants and attractions based off of desired location. You can also save itinerary and arrange by date.",
+    title: "GameShopper",
+    img: "./public/Gameshopper.png",
+    desc: "Online e-commerce site for video games. Fully functional with account management options and a cart that can be checked out. Built using React and PostgreSQL.",
 
   },
   {
     id:3,
-    title: "Planr",
-    img: "./public/travelItin.png",
-    desc: "Travel Itinerary App that allows you to search hotels, restaurants and attractions based off of desired location. You can also save itinerary and arrange by date.",
+    title: "RecipeApp",
+    img: "./public/Recipeapp.png",
+    desc: "Recipe app that allows you to login or create an account, add new recipes and save recipes as well as save your favorite recipes. Built using React, bcrypt, ang Mongodb.",
 
   },
-  {
-    id:4,
-    title: "Planr",
-    img: "./public/travelItin.png",
-    desc: "Travel Itinerary App that allows you to search hotels, restaurants and attractions based off of desired location. You can also save itinerary and arrange by date.",
-
-  },
+ 
 ]
 
 const Single = ({item}) => {

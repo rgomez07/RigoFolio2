@@ -2,6 +2,7 @@ import { Test } from "./Test";
 import"./app.scss"
 import Navbar from "./components/Navbar/Navbar/Navbar";
 import Parallax from "./components/Parallax/Parallax";
+import Contact from "./components/contact/Contact";
 import Hero from "./components/hero/Hero";
 import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
@@ -17,7 +18,8 @@ const App = () => {
     <section id="Portfolio"><Parallax type="portfolio"/></section>
     <Portfolio />
 
-    <section id="Contact">Contact</section>
+    <section id="Contact"><Contact/>
+    </section>
 
   </div>;
 };

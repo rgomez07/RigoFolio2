@@ -14,10 +14,8 @@ const Navbar = () =>{
                 animate = {{opacity:1, scale:1}} 
                 transition={{duration:0.5}}>Rigo Dev</motion.span>
                 <div className="social">
-                <a href="#"><img src="/facebook.png" alt=""/></a> 
-                    <a href="#"><img src="/instagram.png" alt=""/></a>
-                    <a href="#"><img src="/youtube.png" alt=""/></a>
-                    <a href="#"><img src="/dribbble.png" alt=""/></a>
+                <a href="https://www.linkedin.com/in/rigoberto-gomez-a9bb618a/"><img src="/Linkedin2.png" alt=""/></a> 
+                    <a href="https://github.com/rgomez07"><img src="/Github.png" alt=""/></a>
                 </div>
             </div>
          </div>

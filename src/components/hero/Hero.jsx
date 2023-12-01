@@ -40,6 +40,24 @@ const sliderVariants = {
 }
 
 const Hero = () => {
+  const scrollToContactMe = () => {
+    const contactMeSection = document.getElementById("contactMeSection");
+    if (contactMeSection) {
+      contactMeSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const scrollToSeeMyWork = () => {
+    const seeMyWork = document.getElementById("portfolioSection");
+    if (seeMyWork) {
+      seeMyWork.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const scrollDown = () => {
+    const seeDown = document.getElementById("servicesSection");
+    if (seeDown) {
+      seeDown.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className='hero'>
       <div className="wrapper">
@@ -47,11 +65,11 @@ const Hero = () => {
         <motion.h2 variants={textVariants}>RIGOBERTO GOMEZ</motion.h2>
         <motion.h1 variants={textVariants}> Software Developer and Engineer</motion.h1>
         <motion.div variants={textVariants} className="buttons" >
-          <motion.button variants={textVariants}>See My Work</motion.button>
-          <motion.button variants={textVariants}>Contact Me</motion.button>
+          <motion.button onClick={scrollToSeeMyWork}variants={textVariants}>See My Work</motion.button>
+          <motion.button onClick={scrollToContactMe} variants={textVariants}>Contact Me</motion.button>
 
         </motion.div>
-        <motion.img variants={textVariants} animate="scrollButton"src="/scroll.png" alt="" />
+        <motion.img className="scrollDown"onClick={scrollDown} variants={textVariants} animate="scrollButton"src="/scroll.png" alt="" />
       </motion.div>
       </div>
       <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">

@@ -23,6 +23,12 @@ const variants ={
 const Services = () => {
     const ref = useRef();
     const isInView = useInView(ref, {margin:"-100px"})
+    const scrollToPortfolio = () => {
+        const portfolioSection = document.getElementById("portfolioSection");
+        if (portfolioSection) {
+          portfolioSection.scrollIntoView({ behavior: "smooth" });
+        }
+      };
   return (
     <motion.div 
     className='services' 
@@ -33,7 +39,7 @@ const Services = () => {
     // animate= {isInView && "animate"}
     animate = {'animate'}
     >
-        <motion.div className="textContainer" variants={variants}>
+        <motion.div id="servicesSection" className="textContainer" variants={variants}>
             <p> I scale businesses 
                 <br/>and help them grow.</p>
             <hr/>
@@ -46,39 +52,35 @@ const Services = () => {
             </div>
             <div className="title">
                 <h1><motion.b whileHover={{color:"orange"}}>For your</motion.b>Business.</h1>
-                <button>What I do</button>
+                <button onClick={scrollToPortfolio} >What I do</button>
             </div>
         </motion.div>
         <motion.div className="listContainer" variants={variants}>
             <motion.div className="box" whileHover={{background: "lightgray", color: "black"}}>
-                <h2>Branding</h2>
+                <h2>Software Development</h2>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus 
-
+                Experience in writing, designing, and testing code for reliability and scalability. Consistently updating code to reflect market research.
                 </p>
                 <button>Go</button>
             </motion.div>
             <motion.div className="box" whileHover={{background: "lightgray", color: "black"}}>
-                <h2>Branding</h2>
+                <h2>Collaborative Teamwork</h2>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus 
-
+               Collaborate in large or small teams and participate in pair-coding experience, code review, demo days and client consulting.
                 </p>
                 <button>Go</button>
             </motion.div>
             <motion.div className="box" whileHover={{background: "lightgray", color: "black"}}>
-                <h2>Branding</h2>
+                <h2>Maintenance</h2>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus 
-
-                </p>
+                    Maintain and update software, analyze and optimize code. Countinuosly integrate new technology into the software I write.
+              </p>
                 <button>Go</button>
             </motion.div>
             <motion.div className="box" whileHover={{background: "lightgray", color: "black"}}>
-                <h2>Branding</h2>
+                <h2>Methodology</h2>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus 
-
+                    Work in a Agile or waterfall methodology and in a CI/CD environment.
                 </p>
                 <button>Go</button>
             </motion.div>

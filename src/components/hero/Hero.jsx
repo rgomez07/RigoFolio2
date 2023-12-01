@@ -58,7 +58,7 @@ const Hero = () => {
         Educator Motivator Doer
       </motion.div>
         <div className="imageContainer">
-            <img className='mePng' src="/IMG_9882.png" alt="" />
+            <img  className='mePng'src="/IMG_9882.png" alt="" />
         </div>
     </div>
   )

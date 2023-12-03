@@ -61,28 +61,28 @@ const Services = () => {
                 <p>
                 Experience in writing, designing, and testing code for reliability and scalability. Consistently updating code to reflect market research.
                 </p>
-                <button>Go</button>
+                <button onClick={() => window.location.href = "https://www.linkedin.com/in/rigoberto-gomez-a9bb618a/"}>Go</button>
             </motion.div>
             <motion.div className="box" whileHover={{background: "lightgray", color: "black"}}>
                 <h2>Collaborative Teamwork</h2>
                 <p>
                Collaborate in large or small teams and participate in pair-coding experience, code review, demo days and client consulting.
                 </p>
-                <button>Go</button>
+                <button onClick={() => window.location.href = "https://www.linkedin.com/in/rigoberto-gomez-a9bb618a/"}>Go</button>
             </motion.div>
             <motion.div className="box" whileHover={{background: "lightgray", color: "black"}}>
                 <h2>Maintenance</h2>
                 <p>
                     Maintain and update software, analyze and optimize code. Countinuosly integrate new technology into the software I write.
               </p>
-                <button>Go</button>
+              <button onClick={() => window.location.href = "https://www.linkedin.com/in/rigoberto-gomez-a9bb618a/"}>Go</button>
             </motion.div>
             <motion.div className="box" whileHover={{background: "lightgray", color: "black"}}>
                 <h2>Methodology</h2>
                 <p>
                     Work in a Agile or waterfall methodology and in a CI/CD environment.
                 </p>
-                <button>Go</button>
+                <button onClick={() => window.location.href = "https://www.linkedin.com/in/rigoberto-gomez-a9bb618a/"}>Go</button>
             </motion.div>
         </motion.div>
 

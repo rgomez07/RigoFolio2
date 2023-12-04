@@ -30,9 +30,10 @@
       h2 {
         font-size: 16px;
         color: rebeccapurple;
-        letter-spacing: 8px;
+        // letter-spacing: 8px;
         @include mobile {
-           font-size: 11px;
+           font-size: 15px;
+           margin-top: 15px;
           }
       }
 
@@ -59,17 +60,16 @@
         object-fit: cover;
         border-radius: inherit;
         transition: transform 0.3s ease;
-        &:hover {
-            transform: scale(1.1); 
-        }
+        
         @include mobile {
             height: 50%;
             width: auto;
-            top: 45%;
+            top: 60%;
             left: 60%;
             object-fit: contain;
             transform: translate(-50%, -50%);
             position: absolute;
+         
           }
       }
 

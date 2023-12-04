@@ -43,12 +43,16 @@
         @include mobile {
             width: 100%;
             padding: 50px;
+            top: -10%;
         }
         .phoneSvg{
             stroke: orange;
             position: absolute;
             margin: auto;
             z-index: -1;
+            @include mobile {
+               display: none;
+            }
 
         }
        

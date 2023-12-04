@@ -1,6 +1,10 @@
 import { useRef } from "react"
 import "./portfolio.scss"
 import {motion, useScroll, useSpring, useTransform} from "framer-motion"
+import travelItin from "/travelItin.png";
+import GameShopper from "/Gameshopper.png";
+import RecipeAppImage from "/RecipeApp.png";
+
 
 
 
@@ -8,7 +12,7 @@ const items = [
   {
     id:1,
     title: "Planr",
-    img: "./public/travelItin.png",
+    img: travelItin,
     desc: "Travel Itinerary App that allows you to search hotels, restaurants and attractions based off of desired location. You can also save itinerary and arrange by date. Built using React and PostgreSQL while leveraging Google Places API, Google Maps API, and Travel Advisor API.",
     linked: "https://github.com/2206-capstone-ktr/Planr",
 
@@ -16,7 +20,7 @@ const items = [
   {
     id:2,
     title: "GameShopper",
-    img: "./public/Gameshopper.png",
+    img: GameShopper,
     desc: "Online e-commerce site for video games. Fully functional with account management options and a cart that can be checked out. Built using React and PostgreSQL.",
     linked: "https://github.com/rgomez07/game-shopper"
 
@@ -24,7 +28,7 @@ const items = [
   {
     id:3,
     title: "RecipeApp",
-    img: "./public/Recipeapp.png",
+    img: RecipeAppImage,
     desc: "Recipe app that allows you to login or create an account, add new recipes and save recipes as well as save your favorite recipes. Built using React, bcrypt, ang Mongodb.",
     linked: "https://github.com/rgomez07/RecipeApp"
 
@@ -36,9 +40,9 @@ const Single = ({item}) => {
 
   const ref =  useRef()
   const {scrollYProgress} = useScroll({target:ref})
-  const redirectToRepo = ()=>{
-    window.open(item.linked, "_blank") 
-  }
+  const redirectToRepo = () => {
+    window.location.href = item.linked;
+  };
 
   const y = useTransform(scrollYProgress, [0, 1], [-100, 100]);
 

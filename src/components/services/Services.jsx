@@ -51,7 +51,7 @@ const Services = () => {
                 <h1><motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas</h1>
             </div>
             <div className="title">
-                <h1><motion.b whileHover={{color:"orange"}}>For your</motion.b>Business.</h1>
+                <h1><motion.b whileHover={{color:"orange"}}>For your</motion.b> Business.</h1>
                 <button onClick={scrollToPortfolio} >What I do</button>
             </div>
         </motion.div>

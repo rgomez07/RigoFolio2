@@ -51,7 +51,7 @@ const Contact = () => {
             </motion.div>
             <motion.div className="item" variants={variants}>
                 <h2>Location</h2>
-                <span>Chicago</span>
+                <span>Tokyo, Japan 🇯🇵</span>
             </motion.div>
             <motion.div className="item" variants={variants}>
                 <h2>Phone</h2>
